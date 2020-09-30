@@ -1,0 +1,150 @@
+.header
+	background: rgba(255,255,255,.5)
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 100
+	width: 100%
+	transition: all ease 1s
+	@media (max-width: 320px)
+		background: rgba(255,255,255,.8)
+	&.fix
+		background: rgba(255,255,255,1)
+	&__row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 33px 114px 23px 114px
+		@media (max-width: 768px)
+			padding: 15px 45px 5px 45px
+		@media (max-width: 320px)
+			padding: 10px 9px 5px 9px
+	&__logo
+		&_img
+			width: 152px
+			height: 68px
+			object-fit: cover
+			@media (max-width: 768px)
+				width: 110px
+				height: 50px
+			@media (max-width: 320px)
+				width: 78px
+				height: 35px
+	&__btn
+		@media (max-width: 320px)
+			display: none
+	&__btn-projects
+		background: #cb0000
+		color: #ffffff
+		padding: 12px 45px
+		font-size: 16px
+		text-transform: uppercase
+		box-shadow: 0 10px 25px -10px #000
+		@media (max-width: 768px)
+			font-size: 13px
+	&__tels
+		display: flex
+		flex-direction: column
+		& a
+			color: #411700
+			font-size: 26px
+			font-family: CorbelLight
+			@media (max-width: 768px)
+				font-size: 20px
+	&__chat-tel
+
+	&__tel-subtitle
+		margin-top: 8px
+		@media (max-width: 768px)
+			font-size: 12px
+		@media (max-width: 320px)
+			font-size: 11px
+	&__chat-btns
+		& img
+			height: 57px
+			width: 57px
+			object-fit: cover
+			@media (max-width: 768px)
+				height: 40px
+				width: 40px
+			@media (max-width: 320px)
+				height: 30px
+				width: 30px
+	&__chat-link
+	&__mail
+		@media (max-width: 768px)
+			display: none
+	&__mail-link
+		font-size: 21px
+		color: #000000
+	&__social-btns
+		@media (max-width: 320px)
+			display: none
+	&__contact_link
+		& img
+			width: 45px
+			height: 40px
+			object-fit: cover
+			@media (max-width: 768px)
+				width: 38px
+				height: 34px
+	&__subtitle
+		font-size: 15px
+		@media (max-width: 768px)
+			font-size: 12px
+	&__nav
+		background: #411700
+		padding: 0 25px
+		display: block
+		@media (max-width: 320px)
+			display: none
+	&__nav-link
+		font-size: 30px
+		color: #ffffff
+		text-transform: uppercase
+		text-align: right
+		@media (max-width: 768px)
+			font-size: 15px
+	&__topmenu
+		display: flex
+	&__topmenu-item
+		padding: 15px 30px
+		position: relative
+		@media (max-width: 768px)
+			padding: 15px 20px
+		& .header__open-nav:after
+			content: ''
+			position: absolute
+			right: 4px
+			top: 50%
+			transform: translateY(-50%)
+			width: 8px
+			height: 8px
+			border: 8px solid transparent
+			border-top: 8px solid #f7ae00
+			@media (max-width: 768px)
+				width: 4px
+				height: 4px
+				border: 4px solid transparent
+				border-top: 4px solid #f7ae00
+		&:hover
+			background: #f7ae00
+			& .header__open-nav:after
+				border-top: 8px solid #411700
+				@media (max-width: 768px)
+					border-top: 4px solid #411700
+
+	&__submenu
+		position: absolute
+		display: none
+		& li
+			background: #411700
+			padding: 15px 35px 15px 25px
+			margin: 5px 0
+			text-align: left
+			@media (max-width: 768px)
+				padding: 10px 11px 10px 7px
+			& a
+				font-size: 20px
+				@media (max-width: 768px)
+					font-size: 10px

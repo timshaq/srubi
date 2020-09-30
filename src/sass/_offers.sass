@@ -1,0 +1,79 @@
+.offers
+	background: url('../img/bg_slide1.png')
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding-bottom: 16px
+	padding-top: 24px
+	width: 100%
+	&__slider, .swiper-container
+		width: 100%
+		& .swiper-wrapper
+	&__item, .swiper-slide
+		display: flex
+		justify-content: center
+		align-items: center
+	&__text
+		height: 185px
+		display: flex
+		align-items: center
+		& img
+			width: 440px
+			height: 185px
+			object-fit: cover
+	& .swiper-slide
+		opacity: 0
+		transition: all ease .5s
+	& .swiper-slide-prev, .swiper-slide-next
+		z-index: 2
+		opacity: .5
+		transform: scale(.8)
+
+	& .swiper-slide.swiper-slide-active
+		z-index: 3
+		opacity: 1
+
+	& .swiper-pagination-bullet.swiper-pagination-bullet-active
+		width: 11px
+		height: 11px
+		background: #ffdf7e
+		@media (max-width: 768px)
+			width: 6px
+			height: 6px
+
+	& .swiper-pagination-bullet
+		width: 8px
+		height: 8px
+		background: #ffc000
+		margin-right: 8px
+		opacity: 1
+		@media (max-width: 768px)
+			width: 5px
+			height: 5px
+
+	& .swiper-pagination
+		position: relative
+		display: flex
+		align-items: center
+		margin-top: 8px
+	& .swiper-arrow
+		position: absolute
+		width: 40px
+		height: 40px
+		object-fit: cover
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 100
+		@media (max-width: 768px)
+			width: 23px
+			height: 23px
+	& .arrow1
+		left: 30%
+		@media (max-width: 768px)
+			left: 17%
+	& .arrow2
+		right: 30%
+		@media (max-width: 768px)
+			right: 17%

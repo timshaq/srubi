@@ -1,0 +1,43 @@
+.footer
+	background: url('../img/bg2.png')
+	background-position: center top
+	background-repeat: no-repeat
+	background-color: #411700
+	padding: 40px 73px
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	@media (max-width: 768px)
+		background: none
+		background-color: #411700
+	@media (max-width: 320px)
+		padding: 20px 65px 50px 18px
+	&__col
+
+	&__small
+		font-size: 21px
+		color: #FFFFFF
+		margin-bottom: 10px
+		font-family: CorbelLight
+		@media (max-width: 768px)
+			font-size: 12px
+	&__contact
+		&_link
+
+.footer .col
+	&_left
+		display: flex
+		flex-direction: column
+		@media (max-width: 320px)
+			width: 100%
+	&_right
+		& img
+			height: 45px
+			width: 40px
+			object-fit: cover
+			@media (max-width: 768px)
+				height: 55px
+				width: 52px
+		@media (max-width: 320px)
+			display: none
+

@@ -1,0 +1,113 @@
+.reviews
+	background: url('../img/bg_slide2.png')
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding-bottom: 60px
+	width: 100%
+	@media (max-width: 768px)
+		background-position: 51% top
+		padding-bottom: 25px
+	&__title
+		font-size: 36px
+		font-family: CorbelBold
+		text-align: center
+		margin: 25px 0 20px 0
+		@media (max-width: 768px)
+			font-size: 20px
+	&__slider, .swiper-container
+		width: 100%
+		& .swiper-wrapper
+	&__item, .swiper-slide
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: all ease .5s
+	&__text
+		width: 780px
+		height: 240px
+		display: flex
+		align-items: center
+		@media (max-width: 768px)
+			width: 610px
+	&__item-phs
+		width: 290px
+		height: 240px
+		object-fit: cover
+		object-position: left
+		z-index: -1
+		margin-right: -30px
+		@media (max-width: 768px)
+			width: 220px
+			height: 185px
+			margin-right: -60px
+	&__article
+		width: 524px
+		height: 175px
+		background-color: #FFFFFF
+		padding: 15px 20px
+		font-size: 13px
+		position: relative
+		@media (max-width: 768px)
+			width: 450px
+			height: 150px
+			font-size: 15px
+	&__name
+		position: absolute
+		bottom: 20px
+		right: 20px
+		font-size: 17px
+		@media (max-width: 768px)
+			font-size: 15px
+.reviews
+	& .swiper-slide-prev, .swiper-slide-next
+		z-index: 2
+		opacity: .5
+		transform: scale(.8)
+
+	& .swiper-slide-active
+		z-index: 3
+
+	& .swiper-pagination-bullet.swiper-pagination-bullet-active
+		width: 11px
+		height: 11px
+		background: #ffdf7e
+		@media (max-width: 768px)
+			width: 6px
+			height: 6px
+
+	& .swiper-pagination-bullet
+		width: 8px
+		height: 8px
+		background: #ffc000
+		margin-right: 8px
+		opacity: 1
+		@media (max-width: 768px)
+			width: 5px
+			height: 5px
+
+	& .swiper-pagination
+		position: relative
+		display: flex
+		align-items: center
+	& .swiper-arrow
+		position: absolute
+		width: 40px
+		height: 40px
+		object-fit: cover
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 100
+		@media (max-width: 768px)
+			width: 23px
+			height: 23px
+	& .arrow1
+		left: 17%
+		@media (max-width: 768px)
+			left: 5%
+	& .arrow2
+		right: 17%
+		@media (max-width: 768px)
+			right: 5%

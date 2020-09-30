@@ -1,0 +1,158 @@
+.order-scheme
+	background: url('../img/bg3.png')
+	background-position: 50% 50px
+	background-repeat: no-repeat
+	padding-bottom: 50px
+	@media (max-width: 768px)
+		background-position: top center
+	&__title
+		&_h2
+			margin: 25px 0
+			font-family: CorbelBold
+			font-size: 36px
+			text-align: center
+			@media (max-width: 768px)
+				font-size: 24px
+				padding: 25px 0
+				margin: 0
+		&_h4
+			font-family: CorbelBold
+			font-size: 30px
+			@media (max-width: 768px)
+				font-size: 17px
+	&__phs-list
+		display: flex
+		justify-content: center
+		margin-bottom: 25px
+	&__phs-item
+		padding: 0 55px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: flex-start
+		@media (max-width: 768px)
+			padding: 0 25px
+	&__phs-img
+		width: 120px
+		height: 120px
+		object-fit: cover
+		@media (max-width: 768px)
+			width: 78px
+			height: 78px
+	&__phs-title
+		text-align: center
+		color: #060000
+		font-weight: 600
+		font-size: 16px
+		margin-top: 40px
+		@media (max-width: 768px)
+			font-size: 12px
+	&__article
+		font-size: 21px
+		line-height: 25px
+		@media (max-width: 768px)
+			font-size: 16px
+	&__subtitle
+		font-size: 21px
+		@media (max-width: 768px)
+			font-size: 16px
+	&__list
+		font-size: 21px
+		line-height: 25px
+		@media (max-width: 768px)
+			font-size: 16px
+	&__list-item:before
+		content: '—'
+	&__contacts
+		margin-top: 50px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+	&__open-form
+		display: flex
+		margin-top: 40px
+		justify-content: flex-start
+		& .open-form__col
+			width: 45%
+			@media (max-width: 768px)
+				width: 50%
+		& .open-form__col.col_right
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			& .order-scheme__submit
+				font-size: 16px
+				background: #40c511
+				color: #ffffff
+				font-size: 16px
+				box-shadow: 0 0 25px -10px black
+				height: 47px
+				width: 240px
+				margin-top: 30px
+				@media (max-width: 768px)
+					font-size: 12px
+					width: 168px
+					height: 35px
+	&__label
+		font-size: 21px
+		@media (max-width: 768px)
+			font-size: 14px
+	&__input
+		border: 1px solid #ffd800
+		box-shadow: 0 0 25px -10px black
+		height: 40px
+		width: 240px
+		margin-left: 10px
+		padding-left: 10px
+		font-size: 16px
+		@media (max-width: 768px)
+			font-size: 14px
+			width: 168px
+			height: 30px
+
+.fix-container
+
+.order-scheme
+
+.contacts
+	&__col.col_left
+		width: 40%
+		@media (max-width: 768px)
+			width: 50%
+	&__col.col_right
+		width: 50%
+	&__list
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		box-shadow: 0 0 25px -10px black
+		border: 1px solid #ffd800
+	&__list-item
+		width: 33.333%
+		& a
+			width: 100%
+			height: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 100%
+			padding: 5px 20px
+			font-size: 23px
+			font-family: CorbelLight
+			color: #000000
+			background-color: #FFFFFF
+			@media (max-width: 768px)
+				font-size: 16px
+		& img
+			width: 37px
+			height: 37px
+			object-fit: cover
+			margin-right: 10px
+			@media (max-width: 768px)
+				width: 25px
+				height: 25px
+	&__list-item:nth-child(2)
+		& a
+			border-right: 1px solid #ffd800
+			border-left: 1px solid #ffd800
